@@ -1,0 +1,217 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------basic element---------- */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+
+}
+h1{
+    color: #1893f7;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+h3{
+    
+    color: #1893f7;
+    font-weight: 700;
+}
+
+button{
+    background-color: #1893f7;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+p{
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+/* ------------navbar--------------- */
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 30px;
+    background-color: #383838;
+    color: #fff;
+    
+}
+
+
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    width: 20px;
+    color: #118cf1;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+.nav-btn{
+
+    width: 10%;
+    height: 10%;
+    padding: 10px 1px;
+    
+}
+
+.menu-icon{
+    display: none;
+}
+
+/* -------------------- page content------------- */
+
+.page-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ------------left section -------------- */
+
+.left-section div{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.left-section-img{
+    height: 25%;
+    width: 60%;
+    margin: 30px 0;
+}
+
+.left-section p{
+    font-size: 1.4rem;
+}
+
+
+/* -------------------right section ------------------- */
+
+.right-section-vdo{
+    height: 80%;
+    width: 100%;
+}
+
+
+
+/* ---------------------------fees structure content----------- */
+
+.fees-content{
+    background-color: #010101;
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: 40vh;
+}
+
+.fees-content div div{
+    margin: 5px;
+}
+
+/* -------------------footer ------------------ */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 95%;
+    margin:50px auto;
+    /* gap: 50px; */
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 50px;
+    line-height: 30px;
+}
+
+.footer-content{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 20%;
+    color: #aeaeae;
+}
+
+.footer h3{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.footer li{
+    font-size: 12px;
+    color: #aeaeae;
+    
+}
+
+.footer-input ,.footer-btn{
+    width: 100%;
+    margin: 5px 0;
+    padding: 7px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------media Quaries-------------- */
+
+@media screen and (max-width:820px) {
+    
+    .page-content{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 20px;
+    }
+
+    .fees-content{
+        background-color: #fff;
+        color: black;
+    }
+    .footer{
+        display: block;
+    }
+}
